@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(6, 6, 59);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(7, 0, 0);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            font-size: 1.2rem;
+            list-style: none;
+            margin: 0 35px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.5rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .projectSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 50px 0;
+            text-align: center;
+            height: 60vh;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project h2 {
+            font-size: 2rem;
+            color: #111;
+        }
+
+        .project p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: rgb(156, 13, 156);
+            height: 260px;
+            text-align: center;
+            
+        }
+
+        .footer-first {
+            display: flex;
+            margin: 123px 122px;
+            font-size: 1.3rem;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">ROHIT PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="projectSection">
+            <h1>Projects</h1>
+            <!-- Project 1: Elliptic-curve Diffie–Hellman(Python3) -->
+            <div class="project">
+                <h2>Elliptic-curve Diffie–Hellman(Python3)</h2>
+                <p>
+                    Implemented the TLS draft 1.4 with "Elliptic-curve Diffie–Hellman" key exchange using Python as the base language and successfully demonstrated the server-client working on the same using Python asyncio. We also demonstrated the man-in-the-middle attack by imitating a real-time client using fake credentials and successfully defended it through runtime checks.
+                </p>
+            </div>
+
+            <!-- Project 2: Create an AI Model for images processing using Drone in Crop Monitoring( Python3) -->
+            <div class="project">
+                <h2>Create an AI Model for images processing using Drone in Crop Monitoring( Python3)</h2>
+                <p>
+                    Developing an advanced deep learning model using Convolutional Neural Networks (CNN) for Drone Precision Farming. Leveraging TensorFlow and Keras libraries, the model effectively analyzes crop images captured by drones to detect plant diseases. Employing data augmentation and image preprocessing techniques, Cropeye achieves superior accuracy and robustness across various crops and environmental conditions.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-first">
+            <h3>ROHIT PORTFOLIO</h3>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169;rohitsportfolio.com | All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>

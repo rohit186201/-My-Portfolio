@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Rawat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(6, 6, 59);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(7, 0, 0);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            font-size: 1.2rem;
+            list-style: none;
+            margin: 0 35px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.5rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+
+        }
+
+        .firstSection>div {
+
+            width: 35%;
+        }
+
+        .leftSection {
+            margin: 70px;
+            font-size: 3rem;
+
+        }
+        .leftSection .btn{
+            
+            background-color: yellow;
+            padding: 8px 16px;
+            font-size: 1rem;
+        }
+
+
+        .rightSection img {
+
+            width: 110%;
+            margin: 0px 0;
+
+        }
+
+        .purple {
+            color: rgb(14, 237, 14);
+        }
+
+        .text-gray {
+            color: gray;
+            font-size: 1rem;
+        }
+
+        #element {
+            color: rgb(22, 222, 55);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 40vh;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 130px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 180px;
+            ;
+        }
+
+        .image-top {
+            width: 120px;
+            position: relative;
+            top: -80px;
+            left: -55px;
+        }
+
+        .vertical-title {
+            width: 180px;
+
+
+        }
+
+        .title-left {
+            position: relative;
+            left: -56px;
+            top: 3px;
+        }
+
+        .vertical-desc{
+            width: 200px;
+        }
+        .desc-left{
+            position: relative;
+            left: -56px;
+        }
+        footer{
+            background-color: rgb(156, 13, 156);
+            height: 195px;
+        }
+        .footer-first{
+            display: flex;
+            margin: 123px 122px;
+            font-size: 1.3rem;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            font-size: 1.5rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">ROHIT PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am <span class="purple">Rohit Rawat</span>
+                <div>and I have a strong passion for development using C++ programming.</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/rohit-rawat-9452a61b1/" target="_blank" class="btn">LinkedIn</a>
+                        <a href="https://github.com/rohit186201" target="_blank" class="btn">GitHub</a>
+                        <a href="/home/rohit/Music" download class="btn">Download Resume</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dev.png" alt="">
+            </div>
+        </section>
+        <section class="secondSection">
+            <h1 class="blinking-text" style="color: white; font-size: 2rem">Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Ns.png" alt="">
+                    <div class="vertical-title title-left">
+                        Class 10th(2016)
+                    </div>
+
+                    <div class="vertical-desc desc-left">
+                        CGPA = 9.2
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="Ns.png" alt="">
+                    <div class="vertical-title title-left">
+                        Class 12th(2018)
+                    </div>
+
+                    <div class="vertical-desc desc-left">
+                        Percentage = 68.4%
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="AIT.png" alt="">
+                    <div class="vertical-title bcatitle-left">
+                        BCA(2019-2022)
+                        <a class="bcalink" href="https://dseu.ac.in/shakarpur-i/">Ambedkar Institute of Technology(GGSIPU)</a>
+                        GPA = 8.54
+                        <style>
+                            .bcatitle-left {
+                                position: relative;
+                                left: -56px;
+                                top: 16px; 
+                            }
+                            .bcalink{
+                                color: azure;
+                            }
+                            .bcalink:hover{
+                                font-size: 1rem;
+                                color: blue;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="CDAC.png" alt="">
+                    <div class="vertical-title mcatitle-left">
+                        MCA(2022-2024)
+                        <a class="mcalink" href="https://www.cdac.in/index.aspx?id=ND">CDAC, Noida(GGSIPU)</a>
+                        <style>
+                            .mcatitle-left {
+                                position: relative;
+                                left: -56px; 
+                                top: 16px; 
+                            }
+                            .mcalink{
+                                color: azure;
+                            }
+                            .mcalink:hover{
+                                font-size: 1rem;
+                                color: blue;
+                            }
+                        </style>
+                        
+                    </div>
+
+                    <div class="vertical-desc desc-left">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-first">
+            <h3>ROHIT PORTFOLIO</h3>
+        </div>
+        <div class="footer-second"></div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+        <div class="footer-rights">
+            Copyright &#169;rohitsportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script>
+        function blinkText() {
+            const blinkingText = document.querySelector('.blinking-text');
+            let isVisible = true;
+
+            setInterval(function () {
+                if (isVisible) {
+                    blinkingText.style.visibility = 'hidden';
+                    blinkingText.style.color = 'transparent'; // Hide the text by setting its color to transparent
+                } else {
+                    blinkingText.style.visibility = 'visible';
+                    blinkingText.style.color = 'white'; // Change the color to your desired color
+                }
+                isVisible = !isVisible; // Toggle visibility state
+            }, 1000); // Change the interval (1000ms = 1 second) to adjust the blinking speed
+        }
+
+        // Call the blinkText function to start the blinking effect
+        blinkText();
+    </script>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Skills', 'C++', 'C', 'HTML/CSS', 'MySQL', 'Python', 'Java', 'JavaScript', 'Bash shell scripting', ''],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
