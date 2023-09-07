@@ -15,6 +15,34 @@
 
         }
 
+        #animation-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(28, 28, 126);
+            /* Match your webpage's background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            /* Make sure it's on top of your webpage content */
+            opacity: 1;
+            transition: opacity 2s;
+            /* Adjust the duration as needed */
+        }
+
+        #animation-text {
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            opacity: 1;
+            transition: opacity 2s;
+            /* Adjust the duration as needed */
+        }
+
+
         body {
             background-color: rgb(28, 28, 126);
             color: white;
@@ -24,7 +52,7 @@
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             height: 60px;
             background-color: rgb(19, 4, 68);
@@ -49,6 +77,7 @@
         nav ul li a:hover {
             color: lavender;
             font-size: 1.5rem;
+            
         }
 
         .left {
@@ -95,7 +124,7 @@
         .rightSection img {
 
             width: 110%;
-            margin: 0px 0;
+            margin: 0px -60px;
 
         }
 
@@ -164,7 +193,7 @@
         }
 
         footer {
-            background-color: rgb(156, 13, 156);
+            background-color: rgb(167, 14, 167);
             height: 195px;
         }
 
@@ -189,7 +218,7 @@
             <div class="right">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="/about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contactme.html">Contact Me</a></li>
                 </ul>
@@ -197,10 +226,38 @@
         </nav>
     </header>
     <main>
+        <div id="animation-container">
+            <h1 id="animation-text">Fueling Innovation with the Power of C++</h1>
+            <script>
+                function startAnimation() {
+                    const animationText = document.getElementById('animation-text');
+
+                    // Start the animation by setting opacity to 1
+                    animationText.style.opacity = '1';
+
+                    setTimeout(function () {
+                        // Fade out the text by setting opacity to 0
+                        animationText.style.opacity = '0';
+
+                        // Delay the removal of the animation container to match the transition duration
+                        setTimeout(function () {
+                            const animationContainer = document.getElementById('animation-container');
+                            animationContainer.style.display = 'none';
+                        }, 2000); // Should match the transition duration (2 seconds in this example)
+                    }, 2000); // Adjust the delay before starting the fade-out (5 seconds in this example)
+                }
+
+                // Call the animation function when the page loads
+                window.onload = startAnimation;
+
+            </script>
+        </div>
+
+
         <section class="firstSection">
             <div class="leftSection">
                 Hi, I am <span class="purple">Rohit Rawat</span>
-                <div>and I have a strong passion for development using C++ programming.</div>
+                <div>and I'm on a relentless journey to harness the boundless potential of C++ programming.</div>
                 <span id="element"></span>
                 <div class="buttons">
                     <div class="buttons">
@@ -214,7 +271,6 @@
             </div>
             <div class="rightSection">
                 <img src="dev.png" alt="">
-            </div>
         </section>
         <section class="secondSection">
             <h1 class="blinking-text" style="color: white; font-size: 2rem">Education</h1>
@@ -260,7 +316,7 @@
 
                             .bcalink:hover {
                                 font-size: 1rem;
-                                color: blue;
+                                color: rgb(247, 44, 220);
                             }
                         </style>
                     </div>
@@ -282,8 +338,8 @@
                             }
 
                             .mcalink:hover {
-                                font-size: 1rem;
-                                color: blue;
+                                font-size: 1.rem;
+                                color: rgb(247, 44, 220);
                             }
                         </style>
 
@@ -331,11 +387,26 @@
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#element', {
-            strings: ['Skills', 'C++', 'C', 'HTML/CSS', 'MySQL', 'Python', 'Java', 'JavaScript', 'Bash shell scripting', ''],
-            typeSpeed: 50,
-        });
+        var typed;
+
+        function initializeTypedAnimation() {
+            if (typed) {
+                typed.destroy(); // Destroy the previous Typed instance
+            }
+
+            typed = new Typed('#element', {
+                strings: ['Skills', 'C++', 'C', 'HTML/CSS', 'MySQL', 'Python', 'Java', 'JavaScript', 'Bash shell scripting', ''],
+                typeSpeed: 50,
+            });
+        }
+
+        // Initialize the Typed animation immediately
+        initializeTypedAnimation();
+
+        // Set an interval to reinitialize the Typed animation every 5 seconds
+        setInterval(initializeTypedAnimation, 15000); // 5000 milliseconds = 5 seconds
     </script>
+
 </body>
 
 </html>
