@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Rohit Rawat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -54,45 +55,66 @@
             font-size: 1.5rem;
         }
 
-        .aboutSection {
-            flex: 1; /* Expand to fill remaining vertical space */
+        .section {
             max-width: 80vw;
             margin: auto;
-            padding: 50px 0;
-            text-align: center;
-            height: 60vh;
+            padding: 40px 0;
+            text-align: left;
+            animation: fadeIn 1s ease-in-out;
         }
 
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 20px auto;
-            object-fit: cover;
+        .section-title {
+            color: white;
+            font-size: 2rem;
         }
 
-        .about-text {
+        .section-description {
+            color: white;
             font-size: 1.2rem;
-            line-height: 1.6;
-            margin-top: 20px;
+            margin-top: 1px;
         }
 
-        footer {
+        .list {
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 1px;
+        }
+
+        .highlights-list {
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 1px;
+        }
+
+        .hobbies-list {
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 1px;
+        }
+        footer{
             background-color: rgb(156, 13, 156);
-            height: 10hv;
-            text-align: center;
+            height: 195px;
         }
-
-        .footer-first {
+        .footer-first{
             display: flex;
             margin: 123px 122px;
             font-size: 1.3rem;
         }
-
-        footer .footer-rights {
+        footer .footer-rights{
             text-align: center;
             color: gray;
             font-size: 1.5rem;
+        }
+
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -104,7 +126,7 @@
             <div class="right">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contactme.html">Contact Me</a></li>
                 </ul>
@@ -112,26 +134,46 @@
         </nav>
     </header>
     <main>
-        <section class="aboutSection">
-            <img class="profile-img" src="Profile.jpg" alt="Rohit Rawat">
-            <h1>Rohit Rawat</h1>
-            <p>Email: rohit186201@gmail.com</p>
-            <p>Contact: +91 8826485977</p>
-            <p>Address: HNo. 709-B, Nyay Khand 1st, Indirapuram, Ghaziabad, Uttar Pradesh - 201014</p>
-            <div class="about-text">
-                <p>
-                    Welcome to my portfolio! I am Rohit Rawat, a passionate developer with a strong background in C++ programming. I strive to create innovative solutions and develop projects that make a positive impact.
-                </p>
-                <p>
-                    Feel free to explore my projects and get in touch with me for any inquiries or collaboration opportunities. I'm here to bring your ideas to life!
-                </p>
-            </div>
+        <section class="section">
+            <h1 class="section-title">About Me</h1>
+            <p class="section-description">
+                A highly motivated and technically adept computer science graduate with a strong foundation in both software development and machine learning. Seeking a challenging role that leverages my skills in C++, Python, and AI while allowing me to contribute innovative solutions in a collaborative team environment. Eager to apply my problem-solving instincts, passion for technology, and proficiency in agile methodologies to drive successful project outcomes and achieve professional growth.
+            </p>
+            <h2 class="section-title">Skills</h2>
+            <ul class="list">
+                <li>C++ | C | HTML/CSS | MySQL | Python | Java | JavaScript | Basic shell scripting</li>
+                <li>Problem-solving instincts | Object-oriented design | Test-Driven Development (TDD) | Object-Oriented
+                    Development | Design Patterns | Cross-functional collaboration | Proficiency with Git | Agile software
+                    development and testing methodologies | Distributed systems and Microservices | Understanding of threads,
+                    synchronization, locks and load balancing | Knowledge of Operating System | Knowledge of Computer
+                    Networking | DBMS | Data Structures and Algorithms(DSA)</li>
+                <li>Cloud and Container technologies | CI/CD tools | IoT | Linux Kernel and Firmware</li>
+                <li>Familiarity with Operating Systems: Windows, UNIX/Linux, Mac</li>
+                <li>Hindi and English – All professional proficiency or above</li>
+                <!-- Add more skills here -->
+            </ul>
+            <h2 class="section-title">Highlights</h2>
+            <ul class="highlights-list">
+                <li>Ranked 4th in Talent Search Examination in 8th standard.</li>
+                <li>House Captain in school</li>
+                <li>Level 5 coder on coding ninjas(PROFILE - https://www.codingninjas.com/studio/profile/rohit186201)</li>
+                <!-- Add more highlights here -->
+            </ul>
+            <h2 class="section-title">Hobbies</h2>
+            <ul class="hobbies-list">
+                <li>Football player and follower, cricket by blood</li>
+                <li>Avid DC comic books reader</li>
+                <!-- Add more hobbies here -->
+            </ul>
         </section>
     </main>
     <footer>
         <div class="footer-first">
             <h3>ROHIT PORTFOLIO</h3>
         </div>
+        <div class="footer-second"></div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
         <div class="footer-rights">
             Copyright &#169;rohitsportfolio.com | All rights reserved
         </div>
